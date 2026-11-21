@@ -1,0 +1,12 @@
+*.log
+*.chk
+*.out
+*.err
+slurm-*
+*.sdf
+*.maegz
+*.mae
+*.xlsx
+*.csv
+__pycache__/
+*.zip
