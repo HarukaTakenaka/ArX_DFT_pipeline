@@ -2,7 +2,7 @@
 
 Takes one SDF per molecule to finished Gaussian logs with the settings used for the ArBr library: MacroModel conformer search → Kelley clustering → Gaussian 16 opt+freq and single points → log checks and restarts. Used for the ArCl and ArI analogues, and for ArF, ArOTs and ArOTf.
 
-An updated version of Haas and Hardy's *automated_workflow_for_SMILES_to_logs* (v1.1.0). Descriptors are then collected with SigmanGroup Get_Properties v1.0.3 (Zenodo, DOI 10.5281/zenodo.10651727) plus `lp_align.py`.
+An updated version of Haas and Hardy's *automated_workflow_for_SMILES_to_logs* (v1.1.0). Descriptors are then collected with SigmanGroup Get_Properties v1.0.3 (Zenodo, DOI 10.5281/zenodo.10651727) plus `lp_align.py`. This version contains automated clustering when clustering fails.
 
 ## Contents
 
@@ -224,5 +224,4 @@ With `-n 0`, `conformer_cluster.py` picks the number of clusters with the lowest
 ## Notes
 
 - File names follow the ArBr workflow: `arcl3949_conf-1.log`, or `arcl3949_clust-1.log` for clustered molecules.
-- Don't commit logs, checkpoints, SDFs or results to this repository (`.gitignore`).
-- Cite Get_Properties (Zenodo, DOI 10.5281/zenodo.10651727) for the descriptor collection.
+- Followed ArBr library workflow (see SI) and Get_Properties (Zenodo, DOI 10.5281/zenodo.10651727) for the descriptor collection.
